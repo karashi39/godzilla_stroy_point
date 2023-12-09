@@ -8,7 +8,11 @@
 
 ### setup
 
-#### 1. Jira auth
+#### 1. Toggl auth
+
+- get toggl token from [here](https://track.toggl.com/profile/)
+
+#### 2. Jira auth
 
 - get jira token from [here](https://id.atlassian.com/manage-profile/security/api-tokens).
 - write it in `./secrets/jira-token`

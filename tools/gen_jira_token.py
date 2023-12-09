@@ -2,7 +2,7 @@ import base64
 
 EMAIL_FILE = "./secrets/jira-email"
 TOKEN_FILE = "./secrets/jira-token"
-AUTH_FILE = "./secrets/jira-auth-token.py"
+AUTH_FILE = "./secrets/jira_token.py"
 
 # get email
 try:
@@ -30,4 +30,4 @@ s64 = b64.decode()
 
 # output authorization file
 with open(AUTH_FILE, "w") as f:
-    f.write(f"token = {s64}")
+    f.write(f'jira_token = "{s64}"')
