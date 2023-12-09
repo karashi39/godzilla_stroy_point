@@ -1,6 +1,3 @@
-SEPARATOR = "\t"
-
-
 def display_duration(duration: int) -> str:
     sec = duration % 60
     hour = int(duration / 3600)
