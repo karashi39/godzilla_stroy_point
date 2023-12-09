@@ -10,7 +10,7 @@
 
 #### 1. Toggl auth
 
-- get toggl token from [here](https://track.toggl.com/profile/) like this
+- get toggl token from [here](https://track.toggl.com/profile/) and write it in `secrets/toggl_token.py` like this
 
 ```python
 toggl_token = "tokentokentokentoken"
