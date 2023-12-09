@@ -5,7 +5,7 @@ install:
 	@rye sync
 
 jira_token:
-	@rye run python tools/generate_authorization.py
+	@rye run python tools/gen_jira_token.py
 
 run:
 	@rye run python src/main.py
