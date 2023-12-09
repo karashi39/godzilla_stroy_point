@@ -8,7 +8,7 @@ jira_token:
 	@rye run python tools/gen_jira_token.py
 
 run:
-	@rye run python src/main.py | expand -t 42
+	@rye run python src/main.py | expand -t 50
 
 format: # [develop] format
 	@rye run black .

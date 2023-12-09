@@ -1,6 +1,7 @@
 from utils import display_duration
 from constants import SEP
 from . import MyDict
+from config import TAGS
 
 
 class TaskStats:
@@ -25,11 +26,14 @@ class TaskStats:
                 data[project_id] = {description: duration}
         self.data = data
 
-    def output(self, project_name: str = None) -> None:
+    def output(self, project_name: str = None, tag: str = None) -> None:
         for key, data in self.data.items():
             if project_name:
                 project_id = self.my_dict.get_project_id(project_name)
                 if key != project_id:
                     continue
             for task, duration in data.items():
+                if tag and tag in TAGS:
+                    if True not in [ task.startswith(prefix) for prefix in TAGS[tag]]:
+                        continue
                 print(f"{task}{SEP}{display_duration(duration)}")

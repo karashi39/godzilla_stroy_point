@@ -21,8 +21,10 @@ class ProjectStats:
                 data[project_id] = duration
         self.data = data
 
-    def output(self) -> None:
+    def output(self, project: str | None = None) -> None:
         for project_id, duration in self.data.items():
+            if project and self.my_dict.get_project_name(project_id) != project:
+                continue
             print(
                 f"{self.my_dict.get_project_name(project_id)}:{SEP}{display_duration(duration)}"
             )
