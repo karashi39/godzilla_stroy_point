@@ -10,7 +10,11 @@
 
 #### 1. Toggl auth
 
-- get toggl token from [here](https://track.toggl.com/profile/)
+- get toggl token from [here](https://track.toggl.com/profile/) like this
+
+```python
+toggl_token = "tokentokentokentoken"
+```
 
 #### 2. Jira auth
 
