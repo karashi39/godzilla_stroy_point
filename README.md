@@ -23,6 +23,12 @@ toggl_token = "tokentokentokentoken"
 - write your Jira email address in `secrets/jira-email`
 - run `make jira_token`
 
+### run
+
+```
+make run
+```
+
 ## development
 
 now, develop this app in main branch
