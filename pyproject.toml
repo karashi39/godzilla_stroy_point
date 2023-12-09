@@ -2,7 +2,9 @@
 name = "godzilla-stroy-point"
 version = "0.1.0"
 description = "Add a short description here"
-dependencies = []
+dependencies = [
+    "requests~=2.31.0",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
