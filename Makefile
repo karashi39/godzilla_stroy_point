@@ -7,6 +7,9 @@ install:
 jira_token:
 	@rye run python tools/generate_authorization.py
 
+run:
+	@rye run python src/main.py
+
 format: # [develop] format
 	@rye run black .
 	@rye run ruff check . --fix --show-fixes
