@@ -34,6 +34,6 @@ class TaskStats:
                     continue
             for task, duration in data.items():
                 if tag and tag in TAGS:
-                    if True not in [ task.startswith(prefix) for prefix in TAGS[tag]]:
+                    if True not in [task.startswith(prefix) for prefix in TAGS[tag]]:
                         continue
                 print(f"{task}{SEP}{display_duration(duration)}")
